@@ -1,0 +1,113 @@
+.lp{
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+@media(min-width:475px){
+  .lp{
+    height: 100vh;
+  }
+}
+
+.lp__content{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  z-index: 2;
+}
+
+@media(min-height: 550px){
+  .lp__content{
+    justify-content: center;
+  }
+}
+
+.lp__title{
+  font-family: var(--main-font);
+}
+
+.lp__background{
+  position: absolute;
+  min-width: 200%;
+  bottom: 0px;
+  margin: 0;
+  display: block;
+  will-change: transform;
+  transform: translateX(0);
+  animation: wave 13s linear 0s infinite;
+  background: url("../img/wave-lg.svg") repeat-x;
+  height: 320px;
+  width: 2880px;
+  z-index: 1;
+}
+
+@keyframes wave{
+  from{
+    transform: translateX(0) ;
+  }
+
+  to{
+    transform: translateX(-1440px) ;
+  }
+}
+
+.lp__presentation{
+  font-family: var(--main-font);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0;
+}
+
+.presentation__card{
+  list-style: none;
+  max-width: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem 0.4rem;
+  border-radius: var(--radius);
+  position: relative;
+  backdrop-filter: blur(20px);
+  transition: background 500ms;
+}
+
+.presentation__card:hover{
+  background: var(--bg-hov);
+  transition: background 500ms;
+  cursor: pointer;
+}
+
+.presentation__card::before{
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .4;
+  border-radius: var(--radius);
+  background: var(--bg-hov);
+}
+
+.presentation__card h2{
+  margin: 1rem 0 0 0;
+}
+
+.presentation__card svg{
+  height: 3rem;
+  width: 3rem;
+}
+
+.presentation__card p{
+  padding: 0.8rem;
+  white-space: pre-line;
+}
