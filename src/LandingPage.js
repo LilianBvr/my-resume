@@ -5,7 +5,12 @@ const LandingPage = () => {
   return(
     <div className='lp'>
         <div className='lp__content'>
-          <h1 className='lp__title'>Lilian BOUVIER</h1>
+          <div className='lp__title'>
+            Lilian BOUVIER
+            <div className='lp__pic-wrap'>
+              <div className='lp__pic'></div>
+            </div>
+          </div>
           <ul className='lp__presentation'>
             <li className='presentation__card'>
               <svg viewBox="0 0 16 16" class="bi bi-journals" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
