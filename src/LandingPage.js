@@ -7,9 +7,9 @@ const LandingPage = () => {
         <div className='lp__content'>
           <div className='lp__title'>
             Lilian BOUVIER
-            <div className='lp__pic-wrap'>
+          </div>
+          <div className='lp__pic-wrap'>
               <div className='lp__pic'></div>
-            </div>
           </div>
           <ul className='lp__presentation'>
             <li className='presentation__card'>

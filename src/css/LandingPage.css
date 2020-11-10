@@ -29,12 +29,16 @@
 
 .lp__title{
   font-family: var(--main-font);
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: 700;
 }
 
-.lp__title:hover .lp__pic-wrap{
-  display: block;
+@media(min-width: 840px) and (min-height: 550px){
+  .lp__title:hover + .lp__pic-wrap{
+    visibility: visible;
+    opacity: 100%;
+    transition: opacity 0.4s;
+  }
 }
 
 .lp__background{
@@ -83,12 +87,14 @@
   border-radius: var(--radius);
   position: relative;
   backdrop-filter: blur(20px);
-  transition: background 500ms;
+  transition: all 500ms;
+  border: 2px solid transparent;
 }
 
 .presentation__card:hover{
   background: var(--bg-hov);
-  transition: background 500ms;
+  transition: all 500ms;
+  border: 2px solid var(--lean-color);
 }
 
 .presentation__card::before{
@@ -123,8 +129,10 @@
   height: 18rem;
   top:0%;
   left: 65%;
-  filter: drop-shadow(-14px 16px 0px #9E4297);
-  
+  filter: drop-shadow(-14px 16px 0px var(--lean-color));
+  opacity: 0%;
+  transition: all 0.4s;
+  visibility: hidden;
 }
 
 .lp__pic{
@@ -133,7 +141,6 @@
   background: url("../img/pp-bg.jpg") center/contain no-repeat;
   clip-path: polygon(51.67% 4px, 83.66% 32.73%, 83.74% 68.06%, 53.33% 98.62%, 23.24% 69.98%, 53px 33.69%);
   animation: floating 4s ease-in-out 0s infinite;
-  transition: all 0.5s;
 }
 
 @keyframes floating{
