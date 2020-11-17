@@ -10,7 +10,7 @@
   margin: 0;
   padding: 4rem 4rem 2rem 4rem;
   font-family: var(--main-font);
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -50,6 +50,7 @@
   height: 100%;
   padding: 2rem 0 2rem 0;
   transition: 0.5s;
+  transform: translate(var(--translate));
 }
 
 .xp__btn-wrapper{
@@ -69,7 +70,7 @@
 .xp__item{
   min-height: 15rem;
   width: 98vw;
-  min-width: 400px;
+  min-width: 350px;
   background: var(--bg);
   border-radius: 30px;
   flex-grow: 0;
@@ -95,7 +96,7 @@
 .xp__item__description{
   flex-grow: 1;
   margin: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: justify-all;
   white-space: pre-line;
   display: flex;
@@ -104,7 +105,7 @@
 .xp__item__time{
   color: rgb(133, 133, 133);
   margin-bottom: 2rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 @media(min-width: 570px){
@@ -113,6 +114,15 @@
   }
   .xp__item{
     width: 35rem;
+  }
+  .xp__item__description{
+    font-size: 1.2rem;
+  }
+  .xp__item__time{
+    font-size: 1.3rem;
+  }
+  .xp__title{
+    font-size: 3rem;
   }
 }
 
