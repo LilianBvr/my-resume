@@ -33,7 +33,7 @@
   font-weight: 700;
 }
 
-@media(min-width: 840px) and (min-height: 550px){
+@media(min-width: 640px) and (min-height: 550px){
   .lp__title:hover + .lp__pic-wrap{
     visibility: visible;
     opacity: 100%;
@@ -121,6 +121,7 @@
 .presentation__card p{
   padding: 0.8rem;
   white-space: pre-line;
+  text-align: center;
 }
 
 .lp__pic-wrap{
@@ -128,7 +129,7 @@
   width: 15rem;
   height: 18rem;
   top:0%;
-  left: 65%;
+  left: 70%;
   filter: drop-shadow(-14px 16px 0px var(--lean-color));
   opacity: 0%;
   transition: all 0.4s;

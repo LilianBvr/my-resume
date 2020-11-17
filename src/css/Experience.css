@@ -1,0 +1,132 @@
+.xp{
+  min-height: 100vh;
+  background: rgb(28,155,246);
+  background: linear-gradient(0deg,var(--dark-ocean-color) 0%,var(--ocean-color) 100%);
+  overflow-x: hidden;
+}
+
+.xp__title{
+  color: #fff;
+  margin: 0;
+  padding: 4rem 4rem 0 4rem;
+  font-family: var(--main-font);
+  font-size: 3rem;
+  position: relative;
+}
+
+.xp__content{
+  display:flex;
+  flex-flow: row nowrap;
+  height: 100%;
+  padding: 4rem 0 2rem 0;
+  transition: 0.5s;
+}
+
+.xp__btn-wrapper{
+  display: flex;
+  margin-left: 2rem;
+}
+
+.xp__btn{
+  height: 80px;
+  width: 80px;
+  background: var(--bg);
+  clip-path: circle();
+  margin: 0.2rem;
+  position: relative;
+}
+
+.xp__btn:hover{
+  cursor: pointer;
+}
+
+.xp__item{
+  height: 15rem;
+  width: 95vw;
+  max-width: 35rem;
+  background: var(--bg);
+  color:#000;
+  border-radius: 30px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2rem;
+  margin: 0 5px 0 5px;
+  opacity: .1;
+}
+
+.xp__item.active{
+  opacity: 1;
+}
+
+
+/*  Buttons arrows  */
+
+.xp__btn__arrow:hover>.a{
+  width: 30%;
+}
+
+.xp__btn__arrow-right:hover>.a{
+  width: 30%;
+  transform: translateX(30%);
+}
+
+.xp__btn__arrow-left:hover{
+  transform: translateX(5%);
+}
+
+.xp__btn__arrow-right:hover{
+  transform: translateX(-5%);
+}
+
+.xp__btn__arrow{
+  position: absolute;
+  top:0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  transition: .2s;
+}
+
+.xp__btn__arrow>.a{
+  position: absolute;
+  height: 1px;
+  width: 40%;
+  top: 50%;
+  left: 30%;
+  background-color: #000;
+  transition: 0.2s;
+}
+
+.xp__btn__arrow>.b, .xp__btn__arrow>.c{
+  position: absolute;
+  width: 1px;
+  height: 20%;
+  background-color: #000;
+}
+
+.xp__btn__arrow-left>.b{
+  left: 37%;
+  top: 33%;
+  transform: rotateZ(45deg);
+}
+
+.xp__btn__arrow-left>.c{
+  left: 37%;
+  top: 48%;
+  transform: rotateZ(-45deg);
+}
+
+.xp__btn__arrow-right>.b{
+  right: 36%;
+  top: 33%;
+  transform: rotateZ(-45deg);
+}
+
+.xp__btn__arrow-right>.c{
+  right: 36%;
+  top:47%;
+  transform: rotateZ(45deg);
+}
