@@ -1,7 +1,8 @@
 .lp{
-  min-height: 100vh;
+  min-height: 92vh;
   position: relative;
   overflow-x: hidden;
+  padding-top: 8vh;
 }
 
 @media(min-width:475px){

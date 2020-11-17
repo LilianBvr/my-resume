@@ -8,17 +8,47 @@
 .xp__title{
   color: #fff;
   margin: 0;
-  padding: 4rem 4rem 0 4rem;
+  padding: 4rem 4rem 2rem 4rem;
   font-family: var(--main-font);
   font-size: 3rem;
+  text-align: center;
+}
+
+.xp__timeline{
+  height: 5rem;
   position: relative;
+  display: flex;
+  margin-left: 10vw;
+  align-items: center;
+}
+
+.xp__timeline-item{
+  background-color: var(--bg);
+  height: 6px;
+  position: relative;
+}
+
+.xp__timeline-item:before, .xp__timeline-item:last-child:after{
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: -4.5px;
+  left: 0px;
+  clip-path: circle();
+  content:'';
+  background: var(--bg);
+}
+
+.xp__timeline-item:last-child:after{
+  right: -15px;
+  left: auto;
 }
 
 .xp__content{
   display:flex;
   flex-flow: row nowrap;
   height: 100%;
-  padding: 4rem 0 2rem 0;
+  padding: 2rem 0 2rem 0;
   transition: 0.5s;
 }
 
@@ -36,25 +66,54 @@
   position: relative;
 }
 
-.xp__btn:hover{
-  cursor: pointer;
-}
-
 .xp__item{
-  height: 15rem;
-  width: 95vw;
-  max-width: 35rem;
+  min-height: 15rem;
+  width: 98vw;
+  min-width: 400px;
   background: var(--bg);
-  color:#000;
   border-radius: 30px;
   flex-grow: 0;
   flex-shrink: 0;
   font-family: var(--main-font);
-  font-size: 1.5rem;
-  text-align: center;
   padding-top: 2rem;
-  margin: 0 5px 0 5px;
+  margin: 0 1vw 0 1vw;
   opacity: .1;
+  transition: opacity .4s .2s;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color:rgb(96, 96, 96);
+}
+
+.xp__item__title{
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.xp__item__description{
+  flex-grow: 1;
+  margin: 2rem;
+  font-size: 1.2rem;
+  text-align: justify-all;
+  white-space: pre-line;
+  display: flex;
+}
+
+.xp__item__time{
+  color: rgb(133, 133, 133);
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+@media(min-width: 570px){
+  .xp__title{
+    text-align: start;
+  }
+  .xp__item{
+    width: 35rem;
+  }
 }
 
 .xp__item.active{
@@ -129,4 +188,22 @@
   right: 36%;
   top:47%;
   transform: rotateZ(45deg);
+}
+
+
+
+.xp__btn.disabled{
+  opacity: .5;
+}
+
+.xp__btn.disabled:hover{
+  cursor: default;
+}
+
+.xp__btn.disabled{
+  pointer-events: none;
+}
+
+.xp__btn:hover{
+  cursor: pointer;
 }
