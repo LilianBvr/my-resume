@@ -15,14 +15,14 @@ const Experience = () => {
       setActiveItem(activeItem+1);
   }
 
-  const translate = window.innerWidth >= 570 ? 'calc((-35rem - 2vw) *'+activeItem+')' : -100*activeItem+'vw';
+  const translate = window.innerWidth >= 570 ? 'calc((-35rem - 2vw) *'+activeItem+')' : -100*(activeItem)+'vw';
 
   return(
     <div className='xp'>
       <h1 className='xp__title'>Experience</h1>
       <div className='xp__timeline'>
         {ITEMS.map((item, index) => (
-          <div className='xp__timeline-item' style={{width: 80/ITEMS.length+'vw'}}></div>
+          <div className={`xp__timeline-item ${index <= activeItem ? 'filled' : ''}`} style={{width: 80/ITEMS.length+'vw'}}></div>
         ))}
       </div>
       <div className='xp__content' style={{'--translate': translate}}>

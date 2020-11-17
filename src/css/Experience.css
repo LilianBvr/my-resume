@@ -26,6 +26,11 @@
   background-color: var(--bg);
   height: 6px;
   position: relative;
+  transition: .2s .2s;
+}
+
+.xp__timeline-item.filled{
+  background-color: var(--lean-color);
 }
 
 .xp__timeline-item:before, .xp__timeline-item:last-child:after{
@@ -37,10 +42,15 @@
   clip-path: circle();
   content:'';
   background: var(--bg);
+  transition: .3s .2s;
+}
+
+.xp__timeline-item.filled:before{
+  background: var(--lean-color);
 }
 
 .xp__timeline-item:last-child:after{
-  right: -15px;
+  right: -14px;
   left: auto;
 }
 
