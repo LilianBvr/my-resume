@@ -67,7 +67,7 @@ const ITEMS = [
   {
     title: 'Conservatoire de Musique',
     desc: 'Etudiant en Jazz et Musiques Improvisées au conservatoire de Starsbourg.',
-    time: 'depuis Septembre 2017'
+    time: 'Depuis Septembre 2017'
   },
   {
     title: 'Agent agricole',

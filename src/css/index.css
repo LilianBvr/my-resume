@@ -6,6 +6,8 @@
   --ocean-color: #7ec6fa;
   --dark-ocean-color: #1c9bf6;
   --lean-color: rgba(145,101,247);
+  --lean-light-color: #e6e8f5;
+  --lean-text-color: #8186a5;
 }
 
 body {

@@ -29,9 +29,20 @@
 }
 
 .lp__title{
+  align-self: flex-start;
   font-family: var(--main-font);
-  font-size: 40px;
+  font-size: 140px;
   font-weight: 700;
+  margin-left: 50px;
+}
+
+@media(max-width: 700px){
+  .lp__title{
+    align-self: center;
+    font-size: 15vw;
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
 @media(min-width: 640px) and (min-height: 550px){
@@ -107,7 +118,7 @@
   height: 100%;  
   opacity: .4;
   border-radius: var(--radius);
-  background: var(--bg-hov);
+  background: var(--lean-light-color);
 }
 
 .presentation__card h2{

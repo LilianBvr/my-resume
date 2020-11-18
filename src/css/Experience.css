@@ -94,13 +94,13 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  color:rgb(96, 96, 96);
 }
 
 .xp__item__title{
   font-size: 1.6rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 800;
+  color: #000;
 }
 
 .xp__item__description{
@@ -110,29 +110,31 @@
   text-align: justify-all;
   white-space: pre-line;
   display: flex;
+  color: var(--lean-text-color);
 }
 
 .xp__item__time{
-  color: rgb(133, 133, 133);
+  color:#FFF;
   margin-bottom: 2rem;
   font-size: 1rem;
+  border-radius:20px;
+  background-color: var(--lean-color);
+  padding: 5px 20px;
 }
 
 @media(min-width: 570px){
   .xp__title{
     text-align: start;
+    font-size: 3rem;
   }
   .xp__item{
     width: 35rem;
   }
+  .xp__item__title{
+    font-size: 2rem;
+  }
   .xp__item__description{
     font-size: 1.2rem;
-  }
-  .xp__item__time{
-    font-size: 1.3rem;
-  }
-  .xp__title{
-    font-size: 3rem;
   }
 }
 

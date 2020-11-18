@@ -6,7 +6,7 @@ const LandingPage = () => {
     <div className='lp'>
         <div className='lp__content'>
           <div className='lp__title'>
-            Lilian BOUVIER
+            Lilian<br/>BOUVIER
           </div>
           <div className='lp__pic-wrap'>
               <div className='lp__pic'></div>
