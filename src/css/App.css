@@ -1,4 +1,19 @@
 .app{
   min-height: 100vh;
   background-color: var(--bg);
+  position: relative;
+}
+
+.github-link{
+  position: fixed;
+  top:2%;
+  width: 60px;
+  height: 60px;
+  right: 2%;
+  z-index: 3;
+  transition: .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.github-link:hover{
+  transform: scale(1.3);
 }
