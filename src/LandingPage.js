@@ -1,5 +1,7 @@
 import './css/LandingPage.css';
 
+import pp from './img/pp-bg.jpeg';
+
 const LandingPage = () => {
 
   return(
@@ -9,7 +11,7 @@ const LandingPage = () => {
             Lilian<br/>BOUVIER
           </div>
           <div className='lp__pic-wrap'>
-              <div className='lp__pic'></div>
+              <img className='lp__pic' src={pp} alt=''></img>
           </div>
           <ul className='lp__presentation'>
             <li className='presentation__card'>
