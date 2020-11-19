@@ -9,7 +9,7 @@ const LandingPage = () => {
             Lilian<br/>BOUVIER
           </div>
           <div className='lp__pic-wrap'>
-              <img className='lp__pic' src='/img/pp-bg.jpeg' alt=''></img>
+              <img className='lp__pic' src='/img/pp-bg.png' alt=''></img>
           </div>
           <ul className='lp__presentation'>
             <li className='presentation__card'>

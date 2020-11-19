@@ -60,29 +60,9 @@ const Experience = () => {
 
 const ITEMS = [
   {
-    title: 'Stages d’observation 3ème',
-    desc: 'Entreprise Lagoona : location, entretien, réparation de matériel de spectacle. \n\nRégie son de l’Opéra National du Rhin.',
-    time: 'Septembre 2016 à juin 2017'
-  },
-  {
-    title: 'Conservatoire de Musique',
-    desc: 'Etudiant en Jazz et Musiques Improvisées au conservatoire de Starsbourg.',
-    time: 'Depuis Septembre 2017'
-  },
-  {
-    title: 'Agent agricole',
-    desc: 'Job d\'été : Poste d\'agent de castration du maïs semence.',
-    time: 'Etés 2016 à 2018'
-  },
-  {
-    title: 'Projet Terminale S',
-    desc: 'Réalisation de démarches industrielles en équipe destinées à la conception d’un vélo connecté pour personnes à mobilité réduite.',
-    time: 'Septembre 2018 à juin 2019'
-  },
-  {
-    title: 'Equipier FastFood',
-    desc: 'Job d\'été : Poste d’équipier McDonald’s',
-    time: 'Eté 2019'
+    title: 'DUT Informatique',
+    desc: 'DUT production informatique, IUT Robert Schuman à Illkirch-Graffenstaden.',
+    time: 'Septembre 2019 à Juin 2021'
   },
   {
     title: 'Commis de cuisine',
@@ -90,10 +70,31 @@ const ITEMS = [
     time: 'Eté 2020'
   },
   {
-    title: 'DUT Informatique',
-    desc: 'DUT production informatique, IUT Robert Schuman à Illkirch-Graffenstaden.',
-    time: 'Septembre 2019 à Juin 2021'
+    title: 'Equipier FastFood',
+    desc: 'Job d\'été : Poste d’équipier McDonald’s',
+    time: 'Eté 2019'
   },
+  {
+    title: 'Projet Terminale S',
+    desc: 'Réalisation de démarches industrielles en équipe destinées à la conception d’un vélo connecté pour personnes à mobilité réduite.',
+    time: 'Septembre 2018 à juin 2019'
+  },
+  {
+    title: 'Agent agricole',
+    desc: 'Job d\'été : Poste d\'agent de castration du maïs semence.',
+    time: 'Etés 2016 à 2018'
+  },
+  {
+    title: 'Conservatoire de Musique',
+    desc: 'Etudiant en Jazz et Musiques Improvisées au conservatoire de Starsbourg.',
+    time: 'Depuis Septembre 2017'
+  },
+  {
+    title: 'Stages d’observation 3ème',
+    desc: 'Entreprise Lagoona : location, entretien, réparation de matériel de spectacle. \n\nRégie son de l’Opéra National du Rhin.',
+    time: 'Septembre 2016 à juin 2017'
+  }
+  
 ]
 
 export default Experience;
