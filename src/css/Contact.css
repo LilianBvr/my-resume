@@ -33,6 +33,12 @@
   }
 }
 
+@media(min-width: 1300px){
+  .contact__content{
+    font-size: 4rem;
+  }
+}
+
 .contact__mailto{
   text-decoration: underline;
   text-underline-position: under;

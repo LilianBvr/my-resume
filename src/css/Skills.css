@@ -23,7 +23,7 @@
   max-height: 500px;
   position: relative;
   transform: translateX(0);
-  animation: skills_translate 20s linear 0s infinite;
+  animation: skills_translate 50s linear 0s infinite;
 }
 
 @keyframes skills_translate{
