@@ -45,14 +45,6 @@
   }
 }
 
-@media(min-width: 640px) and (min-height: 550px){
-  .lp__title:hover + .lp__pic-wrap{
-    visibility: visible;
-    opacity: 100%;
-    transition: opacity 0.4s;
-  }
-}
-
 .lp__background{
   position: absolute;
   min-width: 200%;
@@ -143,9 +135,14 @@
   top:0%;
   left: 70%;
   filter: drop-shadow(-14px 16px 0px var(--lean-color));
-  opacity: 0%;
   transition: all 0.4s;
-  visibility: hidden;
+  display: none;
+}
+
+@media(min-width: 800px){
+  .lp__pic-wrap{
+    display: block;
+  }
 }
 
 .lp__pic{
