@@ -1,8 +1,8 @@
 .xp{
-  min-height: 100vh;
   background: rgb(28,155,246);
   background: linear-gradient(0deg,var(--dark-ocean-color) 0%,var(--ocean-color) 100%);
   overflow-x: hidden;
+  padding-bottom: 5vw;
 }
 
 .xp__title{

@@ -1,7 +1,6 @@
 .skills{
   background: var(--lean-light-color);
   overflow-x: hidden;
-  height: 100vh;
 }
 
 .skills__title{
